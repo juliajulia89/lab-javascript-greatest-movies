@@ -46,8 +46,8 @@ function orderByYear(arr) {
   function ascending(firstEl, secEl) {
     return firstEl.year - secEl.year;
   }
-  let orderByYearArray = arr.sort(ascending);
-  return orderByYearArray;
+  let orderByYearArr = arr.sort(ascending);
+  return orderByYearArr;
 }
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
