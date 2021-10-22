@@ -15,9 +15,6 @@ function howManyMovies(arr) {
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(arr) {
-  if (arr.length === 0) {
-    return 0;
-  }
   function scoreSum(acc, el) {
     if (el.length === 0) {
       return 0;
