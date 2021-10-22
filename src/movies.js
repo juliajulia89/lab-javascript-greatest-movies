@@ -1,6 +1,8 @@
 // Iteration 1: All directors? - Get the array of all directors.
 // _Bonus_: It seems some of the directors had directed multiple movies so they will pop up multiple times in the array of directors.
 // How could you "clean" a bit this array and make it unified (without duplicates)?
+const movies = require('./data');
+
 function getAllDirectors(arr) {
   return arr.map((movie) => movie.director);
 }
@@ -15,6 +17,7 @@ function howManyMovies(arr) {
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(arr) {
+  if (arr.length === 0) return 0;
   function scoreSum(acc, el) {
     if (el.length === 0) {
       return 0;
@@ -40,7 +43,7 @@ function dramaMoviesScore(arr) {
   let averageScoreDramaMovies = sumScoresDramaMovies / dramaMovies.length;
   return parseFloat(averageScoreDramaMovies.toFixed(2));
 }
-
+console.log(dramaMoviesScore());
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(arr) {
   function ascending(firstEl, secEl) {
